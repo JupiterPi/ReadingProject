@@ -1,10 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="demo">
 <head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-    <p> Hello World </a></p>
-</body>
+		<title>Hello AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="hello.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="Hello">
+			<p>The content is {{greeting.name}}</p>
+		</div>
+	</body>
 </html>

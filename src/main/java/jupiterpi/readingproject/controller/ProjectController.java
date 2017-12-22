@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProjectController {
 	@GetMapping("")
-	public String getHello() {
-		return "Hello World";
+	public Greeting getHello() {
+		return new Greeting("hello");
 	}
 }

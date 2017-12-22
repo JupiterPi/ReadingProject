@@ -1,0 +1,21 @@
+# application.yml
+
+server:
+    port: 8017
+    
+management:
+    port: 8018
+endpoints:
+    sensitive: false
+    enabled: true
+    health:
+        sensitive: false
+management.security.enabled: false 
+    
+spring:
+    data:
+        mongodb:
+            host: 127.0.0.1
+            port: 27017
+            database: readingproject
+    

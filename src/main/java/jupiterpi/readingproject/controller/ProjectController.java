@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping(path = "/project")
+@RequestMapping()
 @RestController
 public class ProjectController {
-	@GetMapping("")
+	
+	@GetMapping("/greeting")
 	public Greeting getHello() {
 		return new Greeting("hello");
 	}
+	
 }
